@@ -31,11 +31,6 @@ diffext = [s + ".arw" for s in diff]
 
 send2trash(diffext)
 
-# for arwfile in diffext:
-#     todelete = address + '\\' + arwfile
-#     print(f'This file is deleted: {arwfile}')
-#     os.remove(todelete)
-
 print(f'These files are deleted: {diffext}')
 print(f'{len(diffext)} items were deleted')
 
