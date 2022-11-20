@@ -9,12 +9,7 @@ import sys, pyperclip, os, fnmatch, pyautogui
 from os.path import splitext
 from send2trash import send2trash
 
-if len(sys.argv) > 1:
-    # Get address from command line.
-    address = ' '.join(sys.argv[1:])
-else:
-    # Get address from clipboard.
-    address = pyperclip.paste()
+address = pyperclip.paste()
 
 os.chdir(address)
 print(f'Current working directory: {os.getcwd()}')
